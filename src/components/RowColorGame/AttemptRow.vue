@@ -18,9 +18,9 @@
       :background="`${item}`"/>
    </div>
    <Dialog  v-model:visible="isWin" modal header="You are WINNER!!!!" :style="{ width: '50vw' }">
-      <p class="dialog-img">
+      <!-- <p class="dialog-img">
          <img src="@/assets/istockphoto-1183756124-612x612.jpg" alt="Winner">
-      </p>
+      </p> -->
    </Dialog>
   </div>
   
