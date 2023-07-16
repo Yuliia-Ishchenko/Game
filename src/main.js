@@ -15,6 +15,7 @@ import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Row from 'primevue/row';
 import Calendar from 'primevue/calendar';
+import './registerServiceWorker'
 
 createApp(App)
 .use(store)
