@@ -20,4 +20,12 @@ const props = defineProps({
    border-radius: 5px;
    margin: 3px;
 }
+@media (max-width: 768px) {
+  .square{
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin: 2px;
+}
+}
 </style>

@@ -39,6 +39,14 @@ function onCircleClick(){
     font-weight: 700;
     
 }
+@media (max-width: 768px) {
+  .circle {
+    width: 35px; /* Изменяем ширину на 20px для мобильных устройств */
+    height: 35px; /* Изменяем высоту на 20px для мобильных устройств */
+    border-radius: 18px; /* Изменяем радиус на 10px для мобильных устройств */
+    font-size: 12px; /* Изменяем размер шрифта на 12px для мобильных устройств */
+  }
+}
 .check {
   color: #71c571;
   opacity: 0;

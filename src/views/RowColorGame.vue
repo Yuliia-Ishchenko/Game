@@ -1,8 +1,11 @@
 <template>
   <div class="RowColorGame">
-    <ControlPanel msg="Welcome to Your Vue.js App" @start="onStart" @openAnswer="onOpenAnswer"/>
-    <PlayingField msg="Welcome to Your Vue.js App"/>
-    <ColorPalette msg="Welcome to Your Vue.js App" @selectColor="onselectColor"/>
+    <div class="header">
+      <ControlPanel @start="onStart" @openAnswer="onOpenAnswer" />
+      <HideColors/>
+    </div>
+    <PlayingField class="playing-field"/>
+    <ColorPalette @selectColor="onselectColor" class="color-palette"/>
   </div>
 </template>
 
@@ -10,6 +13,7 @@
 // import {computed} from 'vue'
 import { useStore } from 'vuex'
 import ControlPanel from '@/components/RowColorGame/ControlPanel.vue'
+import HideColors from '@/components/RowColorGame/HideColors.vue'
 import PlayingField from '@/components/RowColorGame/PlayingField.vue'
 import ColorPalette from '@/components/RowColorGame/ColorPalette.vue'
 import {Colors} from '@/enums/ColorEnum.js'
@@ -45,8 +49,29 @@ function genearteRandomColors() {
 </script>
 
 <style scoped lang="scss">
-.RowColorGame{
-  max-width: 40rem;
+
+.RowColorGame {
+  
+  display: block;
+  // height: 100vh;
   margin: auto;
+}
+
+.header {
+  position: fixed;
+  background: white;
+  z-index: 1;
+  top: 0;
+  width: 100%; /* Установите ширину 100%, чтобы расширить блок на всю ширину родительского контейнера */
+}
+
+.playing-field {
+  margin-top: 100px; /* Задайте отступ сверху, чтобы компонент PlayingField не перекрывался заголовком */
+}
+
+.color-palette {
+  position: fixed;
+  background: white;
+  bottom: 0;
 }
 </style>

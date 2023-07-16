@@ -1,6 +1,6 @@
 <template>
   <div class="playingField">
-    <HideColors/>
+    <!-- <HideColors/> -->
     <div class="activeField">
       <AttemptField :attemptCount="attemptCount"/>
     </div>
@@ -9,7 +9,7 @@
 
 <script setup>
 // import {defineProps} from 'vue'
-import HideColors from '@/components/RowColorGame/HideColors.vue'
+// import HideColors from '@/components/RowColorGame/HideColors.vue'
 import AttemptField from '@/components/RowColorGame/AttemptField.vue'
 // const props = defineProps({
 //   msg: String

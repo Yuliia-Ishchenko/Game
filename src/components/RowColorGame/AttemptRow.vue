@@ -123,4 +123,11 @@ function isWinner(){
    display: flex;
    justify-content:center
 }
+@media (max-width: 768px) {
+  .attemptRow-control{
+  .p-button.p-button-icon-only{
+   width: 2.0rem;
+  }
+}
+}
 </style>

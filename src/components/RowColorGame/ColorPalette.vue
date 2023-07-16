@@ -26,9 +26,19 @@ const emit = defineEmits(['selectColor'])
   margin: 0.5rem 0;
   border-top: 2px solid rgb(236, 236, 236);
   padding: 1rem;
+  width: 100%;
 
   button{
     margin: 0 0.4rem;
   }
+}
+@media (max-width: 768px) {
+  .colorPalette{
+  padding: 1rem 0;
+
+  button{
+    margin: 0 0.2rem;
+  }
+}
 }
 </style>
